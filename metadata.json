@@ -1,0 +1,6 @@
+{
+  "name": "Д1 Маркет — Онлајн Продавница за Козметика и Хигиена",
+  "description": "Модерна онлајн продавница за хигиенски и козметички производи во Северна Македонија со целосен режим за уредување и нарачки.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

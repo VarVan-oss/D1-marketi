@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', 'Manrope', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F7FAFC;
+    color: #1E293B;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Geometric Balance Background Patterns & Accents */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(90, 184, 217, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(90, 184, 217, 0.06) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(43, 150, 203, 0.12) 1.25px, transparent 1.25px);
+}
+
+/* Ambient balanced floating animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(16px, -12px) rotate(1deg);
+  }
+  66% {
+    transform: translate(-12px, 14px) rotate(-1deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 14s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatSlow 18s ease-in-out infinite reverse;
+}
+
+/* Custom Geometric Balance scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+
